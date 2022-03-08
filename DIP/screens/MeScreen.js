@@ -81,7 +81,7 @@ function MeScreen({ navigation, route }) {
                     source={{uri: selectedImage.localUri}}/>:<Image style={styles.avatar}
                 source={require("../assets/avatar_1.png")}/>}
  
-              <View style={{marginLeft:10,marginTop:15, flexShrink:1}}>
+              <View style={{marginLeft:10,marginTop:15, flexShrink:1, flexBasis:'auto', flexGrow:1,} }>
                 <Text style={[styles.name,{marginBottom:10}]}>{userName}</Text>
                 <Text style={styles.userInfo1}> {userInfo1} </Text>
                 <Text style={styles.userInfo2}> {userInfo2} </Text>
@@ -249,6 +249,7 @@ const styles = StyleSheet.create({
       alignItems:"center",
       position: "relative",
       marginRight:0,
+      alignContent:'stretch',
     },
     container: {
       flex: 1,
